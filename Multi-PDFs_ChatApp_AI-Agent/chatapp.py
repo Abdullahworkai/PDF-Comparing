@@ -39,7 +39,7 @@ def get_conversational_chain():
 
     Answer:
     """
-    model = ChatOpenAI(model="gpt-3.5-turbo", temperature=0.3)
+    model = ChatOpenAI(model="gpt-5-mini-2025-08-07", temperature=0.3)
     prompt = PromptTemplate(template = prompt_template, input_variables = ["context", "question"])
     chain = load_qa_chain(model, chain_type="stuff", prompt=prompt)
     return chain
@@ -90,3 +90,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
