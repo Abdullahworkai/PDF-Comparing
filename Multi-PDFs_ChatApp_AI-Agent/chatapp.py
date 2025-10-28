@@ -59,8 +59,7 @@ def user_input(user_question):
 
 def main():
     st.set_page_config("Multi PDF Chatbot", page_icon = ":scroll:")
-   st.header("BAE System Chat Agent 🤖 ")
-
+    st.header("BAE System Chat Agent 🤖 ")  # Must align with line above
     user_question = st.text_input("Ask a Question from the PDF Files uploaded .. ✍️📝")
     if user_question:
         user_input(user_question)
@@ -90,5 +89,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
