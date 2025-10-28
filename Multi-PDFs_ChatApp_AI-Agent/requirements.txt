@@ -4,8 +4,8 @@ langchain
 langchain-community
 langchain-openai
 langchain-text-splitters
+langchain-chains
 openai
 PyPDF2
 faiss-cpu
 tiktoken
-
