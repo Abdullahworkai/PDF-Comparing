@@ -5,7 +5,7 @@ import os
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_openai import ChatOpenAI
-from langchain.chains import load_qa_chain
+from langchain.chains.question_answering import load_qa_chain
 from langchain.prompts import PromptTemplate
 from dotenv import load_dotenv
 
@@ -89,6 +89,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
